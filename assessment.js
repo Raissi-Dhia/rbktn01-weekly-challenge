@@ -43,27 +43,27 @@ function daBears() {
 // Which function(s) access the "chair" variable and get "Too Big!"
 // (Delete wrong answers, leave correct ones)
 
-var fairyTale1 = ["daBears", "papaBear", "mamaBear", "babyBear", "goldilocks"];
+var fairyTale1 = [ "papaBear" ];
 
 // Which function(s) access the "feeling" variable and get "Hungry"
 // (Delete wrong answers, leave correct ones)
 
-var fairyTale2 = ["daBears", "papaBear", "mamaBear", "babyBear", "goldilocks"];
+var fairyTale2 = ["goldilocks"];
 
 // Which function(s) access the "porridge" variable and get "Too Cold!"
 // (Delete wrong answers, leave correct ones)
 
-var fairyTale3 = ["daBears", "papaBear", "mamaBear", "babyBear", "goldilocks"];
+var fairyTale3 = ["mamaBear"];
 
 // Which function(s) access the "sleepy" variable and get undefined
 // (Delete wrong answers, leave correct ones)
 
-var fairyTale4 = ["daBears", "papaBear", "mamaBear", "babyBear", "goldilocks"];
+var fairyTale4 = ["daBears", "papaBear", "mamaBear", "goldilocks"];
 
 // Which function(s) access the isFurry variable and get true
 // (Delete wrong answers, leave correct ones)
 
-var fairyTale5 = ["daBears", "papaBear", "mamaBear", "babyBear", "goldilocks"];
+var fairyTale5 = ["daBears", "papaBear", "mamaBear", "babyBear", ];
 
 
 // *************
@@ -83,6 +83,19 @@ var fairyTale5 = ["daBears", "papaBear", "mamaBear", "babyBear", "goldilocks"];
 
 // CODE HERE...
 
+function Vehicle() {
+	this.gasRemaining = 100 ;
+}
+	Vehicle.prototype.drive = function() { 
+		this.gasRemaining -= 25
+	}
+
+		var mustang = new Vehicle(); 
+		var chager = new Vehicle(); 
+
+			charger.drive(); 
+			mustang.drive();
+			mustang.drive();
 
 
 
@@ -109,6 +122,17 @@ var fairyTale5 = ["daBears", "papaBear", "mamaBear", "babyBear", "goldilocks"];
 
 // CODE HERE...
 
+String.prototype.grammarPolice = function() {
+	str = this.split(" ") ;
+	newStr = [] ;
+
+	for (var i =0; i < str.length; i++){
+		let capitalized = str[i].charAt(0).toUpperCase() 
+		newStr.push(capitalized) 
+	}
+	return newStr.join(" ");
+}
+
 
 
 // *************
@@ -126,7 +150,17 @@ var fairyTale5 = ["daBears", "papaBear", "mamaBear", "babyBear", "goldilocks"];
 // In all other cases, return "Different values"
 
 // CODE HERE...
+	function valueType(arg1, arg2){
+		
+		if(typeof(arg1) === typeof(arg2) && arg1 === arg2){
+			retrun "Exactly the same"
+		}else if (typeof (arg1) !== typeof(arg2) && arg1 === arg2){
+			return "SAme value , different types "
+		}else {
+			return "Different values"
+		}
 
+	}
 // *************
 // * PROBLEM 5 *
 // *************
@@ -152,6 +186,10 @@ function large() {
     return 'My name is ' + this.name + ' and I am very heavy!'
 }
   // CODE HERE...
+  var boundToElephant = {
+  	name : 'Horton'
+  }
+
 
 // *************
 // * PROBLEM 6 *
@@ -164,6 +202,8 @@ function large() {
 // and return the bound function.
 
 // CODE HERE...
+// ran out of time
+function deathStar(crew, capacity)
 
 
 // *************
